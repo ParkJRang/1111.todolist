@@ -1,0 +1,12 @@
+:root {
+  --bg_color:#0f0;
+}
+
+h3 {
+  background: var(--bg_color);
+  display: inline-block;
+}
+
+body {
+  color: #f00;
+}/*# sourceMappingURL=style.css.map */

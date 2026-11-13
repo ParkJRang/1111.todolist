@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* layout.css 레이아웃 서식 => SMAcss방식 */
+
+header, main, footer{
+  padding:10px;
+  box-sizing:border-box;
+}
+
+header{
+  width:100%; height:100px;
+  background:#ccc;
+}
+main{
+  clear:both;
+  overflow-x:hidden;
+  margin:20px 0;
+}
+footer{
+  width:100%; padding:10px 0;
+  background:var(--base_color);
+  color:#fff;
+}
+
+/* OOcss 방식 */
+.btn{
+  width:230px; height:40px;
+  border:1px solid purple;
+  border-radius:3px;
+}
+.login{background:purple;color:#fff;}
+.join{background:#fff;color:purple;}
+
+/* BEM 방식 */
+.search-form{
+  display:inline-block;
+  border:3px solid #00f;
+}
+.search-form .btn{
+  border:none;
+  margin-bottom:5px;
+}
+.search-form__btn{
+  background:#ccc;
+  border:1px solid #333;
+  border-radius:2px;
+}
+.search-form__btn__reset{
+  background:#ff0;
+}
+.search-form__btn__reserve{
+  background:#0f0;
+}
+.search-from__btn__reserve__dark{
+  background:#000;
+  color:#fff;
+}

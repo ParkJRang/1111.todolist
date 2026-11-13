@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/todolist.css" type="text/css">
+  <title>44_js실전테스트_todolist</title>
+</head>
+<body>
+  <h2>44_js실전테스트_todolist</h2>
+  <dl>
+    <dt>오늘의 일정 구현하기</dt>
+    <dd>1. 입력폼과 '추가' 버튼, '글삭제' 버튼을 작성</dd>
+    <dd>2. 입력폼에 글입력 후 '추가' 버튼 클릭시 아래 목록으로 내용 출력</dd>
+    <dd>3. 출력내용 옆에 '삭제' 버튼 추가</dd>
+    <dd>4. '삭제' 버튼 클릭시 해당 글 삭제</dd>
+    <dd>5. 해당 목록 글 클릭시 '취소선' 표시</dd>
+    <dd>6. '글삭제' 버튼 클릭시 전체 글 삭제</dd>
+  </dl>
+
+  <div class="todolist">
+    <!-- 헤더영역 -->
+    <header>
+      <h2>오늘의 할 일은?</h2>
+      <div>
+        <input type="text" placeholder="오늘의 일정을 입력하세요." id="addValue">
+        <button type="submit" id="btn1"><i class="fas fa-plus"></i></button>
+        <!-- <input type="submit">을 쓰지 않은 이유는 button 폼양식 안에 이모티콘을 넣는 등 디자인적 요소를 추가하지 못하기 때문 -->
+      </div>
+    </header>
+    <!-- 메인영역 -->
+    <main>
+      <section>
+        <ul>
+          <li><div id="result">글내용 출력되는 곳</div></li>
+        </ul>
+        <p>
+          <button type="button" id="del_btn">글 모두삭제</button>
+        </p>
+      </section>
+    </main>
+    <!-- 푸터영역 -->
+    <footer>
+      <address>Copyright&copy;2026 오늘의 할일 allrights reserved.</address>
+    </footer>
+  </div>
+  
+  <script src="./script/todolist.js"></script>
+</body>
+</html>

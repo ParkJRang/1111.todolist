@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+:root{
+  --main_color:#ff5900;
+}
+
+.todolist *{margin:0; padding:0;}
+.todolist{
+  font-family:"Noto Sans", sans-serif, arial; 
+  font-size:1.2rem;
+  margin-left:40px; 
+  width:600px;
+}
+/* header */
+.todolist h2{
+  font-size:1.8rem;
+  font-weight:bold;
+}
+.todolist #addValue{
+  border:3px solid var(--main_color);
+  width:500px;
+  font-size:1rem;
+  line-height:1.3rem;
+  padding:0.2rem 0.4rem;
+  margin:1.4rem 0;
+}
+.todolist #btn1{
+  background:var(--main_color);
+  color:#fff;
+  font-size:0.8rem;
+  width:2.4rem;
+  height:2rem;
+  border:none;
+}
+/* main */
+.todolist section{} 
+.todolist section ul{
+  list-style:none;
+} 
+.todolist section ul li{
+  border:1.4px solid var(--main_color);
+  width:560px;
+} 
+.todolist section ul li #result{} 
+.todolist section #del_btn{}
+
+/* footer */
